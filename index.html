@@ -2,7 +2,7 @@
 	<html lang="ru">
 	<head>
 		<meta charset="UTF-8">
-		<title>Gllacy</title>
+		<title>Интернет магазин &#171;Gllacy&#187;</title>
 		<link rel="stylesheet" href="#">
 	</head>
 	<body>
@@ -37,12 +37,15 @@
 
 		<main class="main-menu">
 			<h1>Крем-брюле и пломбир с малиновым джемом</h1>
-			<label for="n1">1</label>
-			<input type="radio" id="n1" name="slider">
-			<label for="n2">2</label>
-			<input type="radio" id="n2" name="slider">
-			<label for="n3">3</label>
-			<input type="radio" id="n3" name="slider">
+			<div class="slide-1">
+				<input type="radio" id="n1" name="slide"><label for="n1">1</label>
+			</div>
+			<div class="slide-2">
+				<input type="radio" id="n2" name="slide"><label for="n2">2</label>
+			</div>
+			<div class="slide-3">
+				<input type="radio" id="n3" name="slide"><label for="n3">3</label>
+			</div>
 			<a class="btn btn-buy" href="#">Давайте оба!</a>
 
 			<section class="bonus-berry">
@@ -68,13 +71,13 @@
 				<a href="#"><p>Сливочно-кофейное с кусочками шоколада</p></a>
 			</div>
 
-			<div class="ice-cream-strawberry">
+			<div class="ice-cream-white-chocolate">
 				<img src="img/3.jpg" alt="Мороженое с присыпкой из белого шоколада">
 				<p>355&#8381;/<span>кг</span></p>
 				<a href="#"><p>Сливочно-клубничное с присыпкой из белого шоколада</p></a>
 			</div>
 
-			<div class="ice-cream-strawberry">
+			<div class="ice-cream-caramel">
 				<img src="img/4.jpg" alt="Мороженое с карамельной подливкой">
 				<p>415&#8381;/<span>кг</span></p>
 				<a href="#"><p>Сливочное крем-брюле с карамельной подливкой</p></a>
@@ -119,10 +122,10 @@
 
 			<footer class="main-footer">
 				<ul class="social-buttons">
-					<li class="tw-btn"><a href="#"></a></li>
-					<li class="inst-btn"><a href="#"></a></li>
-					<li class="fb-btn"><a href="#"></a></li>
-					<li class="vk-btn"><a href="#"></a></li>
+					<li class="tw-btn"><a href="#">Twitter</a></li>
+					<li class="inst-btn"><a href="#">Instagram</a></li>
+					<li class="fb-btn"><a href="#"></a>Facebook</li>
+					<li class="vk-btn"><a href="#"></a>Vk</li>
 				</ul>
 
 				<ul class="additional-info">
@@ -134,7 +137,7 @@
 				
 				<ul class="btn-developer">
 					<li><a href="#"><img src="#" alt="Логотип разработчика сайта" width="108" height="39"></a></li>
-					<li><p>Сделано в <span><a href="#">HTML Academy</a></span> © 2017</p></li>
+					<li><p>Сделано в <a href="#">HTML Academy</a> © 2017</p></li>
 				</ul>
 			</footer>
 

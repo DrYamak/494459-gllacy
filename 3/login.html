@@ -9,8 +9,10 @@
 <body>
 	<div class="login">
 		<form action="#">
-			<input type="text" placeholder="Электронная почта">
-			<input type="text" placeholder="Пароль">
+			<label class="visually-hidden" for="email">Электронная почта</label>
+			<input type="text" id="email" placeholder="Электронная почта">
+			<label class="visually-hidden" for="pswd">Пароль</label>
+			<input type="password" id="pswd" placeholder="Пароль">
 			<button type="submit">Войти</button>
 		</form>
 		<a href="#">Забыли пароль?</a>

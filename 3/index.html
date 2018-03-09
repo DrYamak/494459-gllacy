@@ -39,13 +39,13 @@
 		<main class="main-menu">
 			<h1>Крем-брюле и пломбир с малиновым джемом</h1>
 			<div class="slide-1">
-				<input type="radio" id="n1" name="slide"><label for="n1">1</label>
+				<input type="radio" id="n1" name="slide"><label class="visually-hidden" for="n1">Первый слайд</label>
 			</div>
 			<div class="slide-2">
-				<input type="radio" id="n2" name="slide"><label for="n2">2</label>
+				<input type="radio" id="n2" name="slide"><label class="visually-hidden" for="n2">Второй слайд</label>
 			</div>
 			<div class="slide-3">
-				<input type="radio" id="n3" name="slide"><label for="n3">3</label>
+				<input type="radio" id="n3" name="slide"><label class="visually-hidden" for="n3">Третий слайд</label>
 			</div>
 			<a class="btn btn-buy" href="#">Давайте оба!</a>
 
@@ -60,32 +60,35 @@
 				<a class="btn btn-chocolate" href="#"></a>
 			</section>
 
-			<div class="ice-cream-orange">
-				<img src="img/1.jpg" alt="Мороженое с апельсиновым джемом">
-				<p>310&#8381;/<span>кг</span></p>
-				<a href="#"><p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p></a>
-			</div>
+			<div class="ice-cream-container">
+				<h3 class="visually-hidden">Популярные товары</h3>
+				<div class="ice-cream-orange">
+					<img src="img/1.jpg" alt="Мороженое с апельсиновым джемом">
+					<p>310&#8381;/<span>кг</span></p>
+					<a href="#"><p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p></a>
+				</div>
 
-			<div class="ice-cream-chocolate">
-				<img src="img/2.jpg" alt="Мороженое кусочками шоколада">
-				<p>380&#8381;/<span>кг</span></p>
-				<a href="#"><p>Сливочно-кофейное с кусочками шоколада</p></a>
-			</div>
+				<div class="ice-cream-chocolate">
+					<img src="img/2.jpg" alt="Мороженое с кусочками шоколада">
+					<p>380&#8381;/<span>кг</span></p>
+					<a href="#"><p>Сливочно-кофейное с кусочками шоколада</p></a>
+				</div>
 
-			<div class="ice-cream-white-chocolate">
-				<img src="img/3.jpg" alt="Мороженое с присыпкой из белого шоколада">
-				<p>355&#8381;/<span>кг</span></p>
-				<a href="#"><p>Сливочно-клубничное с присыпкой из белого шоколада</p></a>
-			</div>
+				<div class="ice-cream-white-chocolate">
+					<img src="img/3.jpg" alt="Мороженое с присыпкой из белого шоколада">
+					<p>355&#8381;/<span>кг</span></p>
+					<a href="#"><p>Сливочно-клубничное с присыпкой из белого шоколада</p></a>
+				</div>
 
-			<div class="ice-cream-caramel">
-				<img src="img/4.jpg" alt="Мороженое с карамельной подливкой">
-				<p>415&#8381;/<span>кг</span></p>
-				<a href="#"><p>Сливочное крем-брюле с карамельной подливкой</p></a>
+				<div class="ice-cream-caramel">
+					<img src="img/4.jpg" alt="Мороженое с карамельной подливкой">
+					<p>415&#8381;/<span>кг</span></p>
+					<a href="#"><p>Сливочное крем-брюле с карамельной подливкой</p></a>
+				</div>
 			</div>
 
 			<section class="description">
-				<h3 class="visually-hidden">Преймущества</h3>
+				<h4 class="visually-hidden">Преймущества</h4>
 				<b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
 				<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
 				<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
@@ -94,7 +97,7 @@
 			</section>
 
 			<article class="blog">
-				<h4>Новое в нашем блоге</h4>
+				<h5>Новое в нашем блоге</h5>
 				<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
 			</article>
 
@@ -109,8 +112,8 @@
 			</article>
 
 			<div class="map">
-				<h5 class="visually-hidden">Как нас найти</h5>
-				<img src="#" alt="Карта" width="1250" height="430">
+				<h6 class="visually-hidden">Как нас найти</h6>
+				<img src="#" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1250" height="430">
 				<img src="#" alt="Пин" width="80" height="140">
 				<div class="address">
 					<p><span>Адрес главного офиса и офлайн-магазина:</span>
@@ -123,10 +126,10 @@
 
 			<footer class="main-footer">
 				<ul class="social-buttons">
-					<li class="tw-btn"><a href="#">Twitter</a></li>
-					<li class="inst-btn"><a href="#">Instagram</a></li>
-					<li class="fb-btn"><a href="#"></a>Facebook</li>
-					<li class="vk-btn"><a href="#"></a>Vk</li>
+					<li class="tw-btn"><a href="#" aria-label="Твиттер"></a></li>
+					<li class="inst-btn"><a href="#" aria-label="Инстаграм"></a></li>
+					<li class="fb-btn"><a href="#" aria-label="Фейсбук"></a></li>
+					<li class="vk-btn"><a href="#" aria-label="ВКонтакте"></a></li>
 				</ul>
 
 				<ul class="additional-info">

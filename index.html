@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Интернет магазин &#171;Gllacy&#187;</title>
+		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
 		<header class="main-header">
-			<img class="logo" src="img/logo.png" width="154" height="64" alt="Магазин мороженого Gllacy">
+			<img class="logo" src="img/logo.png" width="154" height="64" alt="Магазин мороженого &#171;Gllacy&#187;">
 			<nav class="navigation">
 				<ul class="navigation-menu">
 					<li class="catalog"><a href="#">Каталог</a></li>
@@ -21,14 +22,51 @@
 					<li class="ice"><a href="#">Фруктовый лед</a></li>
 				</ul>
 			</nav>
+
 			<a class="search" href="#">Поиск</a>
 			<form class="search-form" action="#">
 				<label for="search-input"></label>
 				<input type="text" name="search" id="search-input" placeholder="Что ищем?">
-				<button type="submit"></button>
+				<button class="visually-hidden" type="submit">Найти</button>
 			</form>
-			<a class="enter" href="#">Вход</a>
-			<a class="cart" href="">Пусто</a>
+
+			<a class="login" href="#">Вход</a>
+			<div class="enter">
+				<form action="#">
+					<label class="visually-hidden" for="login-email">Электронная почта</label>
+					<input type="text" id="login-email" placeholder="Электронная почта">
+					<label class="visually-hidden" for="pswd">Пароль</label>
+					<input type="password" id="pswd" placeholder="Пароль">
+					<button class="btn btn-login" type="submit">Войти</button>
+				</form>
+				<a href="#">Забыли пароль?</a>
+				<a href="#">Новая регистрация</a>
+			</div>
+
+			<a class="empty-cart" href="#">Пусто</a>
+			<div class="cart">
+				<form action="#">
+					<table>
+						<tr>
+							<td><a href="#"><img src="img/btn-close-mini.png" width="11" height="11" alt="Удалить из корзины"></a></td>
+							<td><a href="#"><img src="img/1.jpg" alt="Мороженое с апельсиновым джемом" width="33" height="33"></a></td>
+							<td>Пломбир с апельсиновым джемом</td>
+							<td>1,5 кг х 200 руб.</td>
+							<td>300 руб.</td>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="img/btn-close-mini.png" alt="Удалить из корзины" width="11" height="11"></a></td>
+							<td><a href="#"><img src="img/3.jpg" alt="Мороженое с присыпкой из белого шоколада" width="33" height="33"></a></td>
+							<td>Клубничный пломбир с присыпкой из белого шоколада</td>
+							<td>1,5 кг х 300 руб.</td>
+							<td>450 руб.</td>
+						</tr>
+					</table>
+					<span class="total-price">Итого: 750 руб.</span>
+					<button class="btn btn-cart" type="submit">Оформить заказ</button>
+				</form>
+			</div>
+
 			<p class="info">
 				<span>С 10 до 20, ежедневно</span>
 				8 812 450-25-25
@@ -104,8 +142,8 @@
 				<h4 class="visually-hidden">Новостная рассылка</h4>
 				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
 				<form action="#">
-					<label for="email"></label>
-					<input type="text" id="email" placeholder="Электронная почта">
+					<label for="news-email"></label>
+					<input type="text" id="news-email" placeholder="Электронная почта">
 					<button class="btn btn-email" type="submit">Отправить</button>
 				</form>
 			</article>
@@ -120,6 +158,19 @@
 						<p>Для заказов по телефону:<span><b>8 812 450-25-25</b></span>(с 10 до 20 ежедневно)</p>
 						<a class="btn btn-feedback" href="#">Форма обратной связи</a>
 					</div>
+				</div>
+
+				<div class="feedback">
+					<b>Мы обязательно вам ответим!</b>
+					<button type="button"><img src="img/btn-close.png" width="18" height="17" alt="Закрыть форму"></button>
+					<form action="#">
+						<label class="visually-hidden" for="name">Как вас зовут?</label>
+						<input type="text" id="name" placeholder="Как вас зовут?">
+						<label class="visually-hidden" for="email">Ваша почта для ответа?</label>
+						<input type="text" id="email" placeholder="Ваша почта для ответа?">
+						<textarea name="text" cols="50" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+						<button class="btn btn-feedback" type="submit">Отправить</button>
+					</form>
 				</div>
 			</main>
 
@@ -143,6 +194,5 @@
 					<li><p>Сделано в <a href="#">HTML Academy</a> © 2017</p></li>
 				</ul>
 			</footer>
-
 		</body>
 		</html>

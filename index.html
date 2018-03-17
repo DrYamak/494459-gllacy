@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Интернет магазин &#171;Gllacy&#187;</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
@@ -12,14 +13,15 @@
 			<nav class="navigation">
 				<ul class="navigation-menu">
 					<li class="catalog"><a href="#">Каталог</a></li>
-					<li class="melorin"><a href="#">Мелорин</a></li>
 					<li class="shipment"><a href="#">Доставка и оплата</a></li>
 					<li class="company"><a href="#">О Компании</a></li>
 				</ul>
 				<ul class="catalog-list">
+					<li class="new">Новинки</li>
 					<li class="creamy"><a href="#">Сливочное</a></li>       
 					<li class="scherbets"><a href="#">Щербеты</a></li>
 					<li class="ice"><a href="#">Фруктовый лед</a></li>
+					<li class="melorin"><a href="#">Мелорин</a></li>
 				</ul>
 			</nav>
 
@@ -48,14 +50,14 @@
 				<form action="#">
 					<table>
 						<tr>
-							<td><a href="#"><img src="img/btn-close-mini.png" width="11" height="11" alt="Удалить из корзины"></a></td>
+							<td><a href="#"><img src="img/close-mini.png" width="11" height="11" alt="Удалить из корзины"></a></td>
 							<td><a href="#"><img src="img/1.jpg" alt="Мороженое с апельсиновым джемом" width="33" height="33"></a></td>
 							<td>Пломбир с апельсиновым джемом</td>
 							<td>1,5 кг х 200 руб.</td>
 							<td>300 руб.</td>
 						</tr>
 						<tr>
-							<td><a href="#"><img src="img/btn-close-mini.png" alt="Удалить из корзины" width="11" height="11"></a></td>
+							<td><a href="#"><img src="img/close-mini.png" alt="Удалить из корзины" width="11" height="11"></a></td>
 							<td><a href="#"><img src="img/3.jpg" alt="Мороженое с присыпкой из белого шоколада" width="33" height="33"></a></td>
 							<td>Клубничный пломбир с присыпкой из белого шоколада</td>
 							<td>1,5 кг х 300 руб.</td>
@@ -86,41 +88,41 @@
 			</div>
 			<a class="btn btn-buy" href="#">Давайте оба!</a>
 
-			<section class="bonus-berry">
+			<section class="bonus bonus-berry">
 				<h2>Малинка даром!</h2>
 				<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-				<a class="btn btn-berry" href="#"></a>
+				<a class="btn btn-bonus btn-berry" href="#">Хочу варенье!</a>
 			</section>
-			<section class="bonus-chocolate">
+			<section class="bonus bonus-chocolate">
 				<h2>Шоколадки даром!</h2>
 				<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-				<a class="btn btn-chocolate" href="#"></a>
+				<a class="btn btn-bonus btn-chocolate" href="#">Хочу шоколадки!</a>
 			</section>
 
 			<div class="ice-cream-container">
 				<h3 class="visually-hidden">Популярные товары</h3>
 				<div class="ice-cream-orange">
-					<img src="img/1.jpg" alt="Мороженое с апельсиновым джемом">
-					<p>310&#8381;/<span>кг</span></p>
-					<a href="#"><p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p></a>
+					<img class="ice-cream-img" src="img/2.jpg" width="200" height="200" alt="Мороженое с апельсиновым джемом">
+					<p class="ice-cream-price">310&#8381;<span>/кг</span></p>
+					<a href="#"><p class="ice-cream-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</p></a>
 				</div>
 
 				<div class="ice-cream-chocolate">
-					<img src="img/2.jpg" alt="Мороженое с кусочками шоколада">
-					<p>380&#8381;/<span>кг</span></p>
-					<a href="#"><p>Сливочно-кофейное с кусочками шоколада</p></a>
+					<img class="ice-cream-img" src="img/3.jpg" width="200" height="200" alt="Мороженое с кусочками шоколада">
+					<p class="ice-cream-price">380&#8381;<span>/кг</span></p>
+					<a href="#"><p class="ice-cream-title">Сливочно-кофейное с кусочками шоколада</p></a>
 				</div>
 
 				<div class="ice-cream-white-chocolate">
-					<img src="img/3.jpg" alt="Мороженое с присыпкой из белого шоколада">
-					<p>355&#8381;/<span>кг</span></p>
-					<a href="#"><p>Сливочно-клубничное с присыпкой из белого шоколада</p></a>
+					<img class="ice-cream-img" src="img/4.jpg" width="200" height="200" alt="Мороженое с присыпкой из белого шоколада">
+					<p class="ice-cream-price">355&#8381;<span>/кг</span></p>
+					<a href="#"><p class="ice-cream-title">Сливочно-клубничное с присыпкой из белого шоколада</p></a>
 				</div>
 
 				<div class="ice-cream-caramel">
-					<img src="img/4.jpg" alt="Мороженое с карамельной подливкой">
-					<p>415&#8381;/<span>кг</span></p>
-					<a href="#"><p>Сливочное крем-брюле с карамельной подливкой</p></a>
+					<img class="ice-cream-img" src="img/5.jpg" width="200" height="200" alt="Мороженое с карамельной подливкой">
+					<p class="ice-cream-price">415&#8381;<span>/кг</span></p>
+					<a href="#"><p class="ice-cream-title">Сливочное крем-брюле с карамельной подливкой</p></a>
 				</div>
 			</div>
 
@@ -142,27 +144,27 @@
 				<h5 class="visually-hidden">Новостная рассылка</h5>
 				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
 				<form action="#">
-					<label for="news-email"></label>
-					<input type="text" id="news-email" placeholder="Электронная почта">
+					<label for="email-news"></label>
+					<input type="text" id="email-news" placeholder="Электронная почта">
 					<button class="btn btn-email" type="submit">Отправить</button>
 				</form>
 			</article>
 
 			<div class="map">
-				<h6 class="visually-hidden">Как нас найти</h6>
-				<img src="#" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1250" height="430">
-				<img src="#" alt="Пин" width="80" height="140">
+				<h6 class="visually-hidden">Как до нас добраться</h6>
+				<img src="img/map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="900" height="744">
+				<img src="img/pin.png" alt="Пин" width="80" height="140">
 				<div class="address">
-					<p><span>Адрес главного офиса и офлайн-магазина:</span>
+					<p>Адрес главного офиса и офлайн-магазина:
 						<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
-						<p>Для заказов по телефону:<span><b>8 812 450-25-25</b></span>(с 10 до 20 ежедневно)</p>
+						<p>Для заказов по телефону:<b>8 812 450-25-25</b>(с 10 до 20 ежедневно)</p>
 						<a class="btn btn-feedback" href="#">Форма обратной связи</a>
 					</div>
 				</div>
 
 				<div class="feedback">
 					<b>Мы обязательно вам ответим!</b>
-					<button type="button"><img src="img/btn-close.png" width="18" height="17" alt="Закрыть форму"></button>
+					<button type="button"><img src="img/close.png" width="18" height="17" alt="Закрыть форму"></button>
 					<form action="#">
 						<label class="visually-hidden" for="name">Как вас зовут?</label>
 						<input type="text" id="name" placeholder="Как вас зовут?">
@@ -175,23 +177,23 @@
 			</main>
 
 			<footer class="main-footer">
-				<ul class="social-buttons">
-					<li class="tw-btn"><a href="#">Твиттер</a></li>
-					<li class="inst-btn"><a href="#">Инстаграм</a></li>
-					<li class="fb-btn"><a href="#">Фейсбук</a></li>
-					<li class="vk-btn"><a href="#">ВКонтакте</a></li>
+				<ul class="social-btn">
+					<li><a class="tw-btn" href="#">Твиттер</a></li>
+					<li><a class="inst-btn" href="#">Инстаграм</a></li>
+					<li><a class="fb-btn" href="#">Фейсбук</a></li>
+					<li><a class="vk-btn" href="#">ВКонтакте</a></li>
 				</ul>
 
 				<ul class="additional-info">
-					<li><a href="#">Для поставщиков</a></li>
+					<li><a class="provider" href="#">Для поставщиков</a></li>
 					<li><a href="#">О производстве</a></li>
 					<li><a href="#">Наши документы</a></li>
 					<li><a href="#">Экологические стандарты</a></li>
 				</ul>
 				
 				<ul class="btn-developer">
-					<li><a href="#"><img src="#" alt="Логотип разработчика сайта" width="108" height="39"></a></li>
-					<li><p>Сделано в <a href="#">HTML Academy</a> © 2017</p></li>
+					<li><a href="#"><img src="img/logo-dev.png" alt="Логотип разработчика сайта" width="108" height="39"></a></li>
+					<li><p>Сделано в <a class="academy" href="#">HTML Academy</a> © 2017</p></li>
 				</ul>
 			</footer>
 		</body>

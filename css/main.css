@@ -1,32 +1,31 @@
 body {
-	padding: 0;
 	margin: 0;
-	
+
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 700;
 
 	background-color: #849D8F;
-	background-repeat: no-repeat;
-	background-position: top center;
 }
 
 a {
 	text-decoration: none;
 }
 
-li {
+ul {
 	list-style: none;
 }
 
-h1, h2 {
+h1,
+h2,
+a {
 	color: #fff;
 }
 
 .btn {
-	color: #fff;
 	border-radius: 50px;
+	border: none;
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 	background-color: #fff;
 	background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
@@ -53,8 +52,11 @@ h1, h2 {
 
 .navigation-menu a {
 	margin-left: 30px;
-	color: #fff;
 	border-bottom: 1px solid #adbdb4;
+}
+
+.catalog a {
+  line-height: 16px;
 }
 
 .catalog a:hover {
@@ -71,9 +73,7 @@ h1, h2 {
 .catalog a:focus {
 	padding: 5px 10px;
 	background-color: #d07058;
-	color: #fff;
 	border-radius: 15px;
-	line-height: 16px;
 }
 
 .catalog-list a {
@@ -84,8 +84,6 @@ h1, h2 {
 }
 
 .catalog-list {
-	width: 100px;
-	height: 171px;
 	padding-left: 40px;
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 	background-color: #f8f7f4;
@@ -113,20 +111,10 @@ h1, h2 {
 	background-color: #f6b5a5;
 }
 
-.creamy a:focus,
-.scherbets a:focus,
-.ice a:focus,
-.melorin a:focus {
-	padding: 10px;
-	background-color: #d07058;
-}
-
 .search {
-	width: 10px;
-	height: 10px;
 	font-size: 0;
 	background-color: rgba(255, 255, 255, 0.2);
-	background-image: url("../img/search.png");
+	background-image: url("../img/search.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	padding: 15px;
@@ -135,7 +123,7 @@ h1, h2 {
 
 .search:hover {
 	background-color: #fff;
-	background-image: url("../img/search-hover.png");
+	background-image: url("../img/search.svg");
 }
 
 .searh-form {
@@ -154,7 +142,6 @@ h1, h2 {
 	position: relative;
 	width: 46px;
 	height: 19px;
-	color: #fff;
 	font-weight: 500;
 	font-size: 14px;
 	background-color: rgba(255, 255, 255, 0.2);
@@ -193,7 +180,6 @@ h1, h2 {
 .empty-cart {
 	width: 59px;
 	height: 16px;
-	color: #fff;
 	font-weight: 500;
 	font-size: 14px;
 	background-color: rgba(255, 255, 255, 0.2);
@@ -210,6 +196,7 @@ h1, h2 {
 }
 
 .cart {
+	padding-left: 10px;
 	color: #323232;
 	font-size: 13px;
 	font-weight: 400;
@@ -265,7 +252,7 @@ h1 {
 }
 
 .bonus p {
-	font-size: 18px;      
+	font-size: 18px;
 	color: #fff;
 	line-height: 22px;
 }
@@ -283,73 +270,7 @@ h1 {
 	border-radius: 15px;
 }
 
-.ice-cream-orange:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-	border-radius: 5px;
-}
-
-.ice-cream-chocolate:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-	border-radius: 5px;
-}
-
-.ice-cream-white-chocolate:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-	border-radius: 5px;
-}
-
-.ice-cream-caramel:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-	border-radius: 5px;
-}
-
-.ice-cream-cowberry:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-	border-radius: 5px;
-}
-
-.ice-cream-blueberry:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-	border-radius: 5px;
-}
-
-.ice-cream-caramel-pieces:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-	border-radius: 5px;
-}
-
-.ice-cream-chocolate-flakes:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-	border-radius: 5px;
-}
-
-.ice-cream-chocolate-pieces:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-	border-radius: 5px;
-}
-
-.ice-cream-menthol:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-	border-radius: 5px;
-}
-
-.ice-cream-black-chocolate:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-	border-radius: 5px;
-}
-
-.ice-cream-mint:hover {
+.ice-cream:hover {
 	background-color: rgba(255, 255, 255, 0.2);
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
@@ -359,7 +280,7 @@ h1 {
 	border-radius: 100px;
 }
 
-.ice-cream-title{
+.ice-cream-title {
 	color: #fff;
 	font-weight: 500;
 	line-height: 22px;
@@ -397,7 +318,7 @@ h1 {
 }
 
 .blog {
-	width: 691px;
+	width: 420px;
 	background-image: url("../img/berry-ice-cream.jpg");
 	background-repeat: no-repeat;
 }
@@ -432,6 +353,11 @@ h1 {
 	font-weight: 700;
 }
 
+.map {  /*Доделать*/
+  background-image: url("../img/pin.png");
+  background-repeat: no-repeat;
+}
+
 .address p {
 	color: #323232;
 	font-size: 14px;
@@ -455,32 +381,28 @@ h1 {
 	font-size: 0;
 }
 
+.social-btn {
+  padding: 20px; /*Пофиксить*/
+  background-repeat: no-repeat;
+}
+
 .tw-btn {
-	padding: 20px; /*Пофиксить*/
 	background-image: url("../img/twitter.svg");
-	background-repeat: no-repeat;
 }
 
 .inst-btn {
-	padding: 20px; /*Пофиксить*/
 	background-image: url("../img/instagram.svg");
-	background-repeat: no-repeat;
 }
 
 .fb-btn {
-	padding: 20px; /*Пофиксить*/
 	background-image: url("../img/fb.svg");
-	background-repeat: no-repeat;
 }
 
 .vk-btn {
-	padding: 20px; /*Пофиксить*/
 	background-image: url("../img/vk.svg");
-	background-repeat: no-repeat;
 }
 
 .additional-info a {
-	color: #fff;
 	font-size: 13px;
 	font-weight: 400;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -513,7 +435,7 @@ h1 {
 }
 
 .academy {
-	color: #fefefe;	
+	color: #fefefe;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
@@ -528,7 +450,7 @@ h1 {
 
 
 /*.inner-page {
-	
+
 }
 
 .main-menu {

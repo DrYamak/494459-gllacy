@@ -8,8 +8,6 @@ body {
 	font-weight: 700;
 
 	background-color: #849D8F;
-	/*Пофиксить*/
-	background-image: url("../img/two-ice-cream.png");
 	background-repeat: no-repeat;
 	background-position: top center;
 }
@@ -50,6 +48,7 @@ h1, h2 {
 .navigation-menu {
 	display: flex;
 	flex-direction: row;
+	justify-content: flex-start;
 }
 
 .navigation-menu a {
@@ -139,12 +138,8 @@ h1, h2 {
 	background-image: url("../img/search-hover.png");
 }
 
-.search-form input {
-	display: none;
-}
+.searh-form {
 
-.search:checked ~ .search-form {
-	display: inline-block;
 }
 
 .btn-login {
@@ -152,7 +147,7 @@ h1, h2 {
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 24px;
-	padding: 12px 24px;
+	padding: 8px 22px;
 }
 
 .login {
@@ -177,6 +172,24 @@ h1, h2 {
 	background-repeat: no-repeat;
 }
 
+.enter {
+	width: 277px;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	background-color: #f8f7f4;
+}
+
+.enter a {
+	color: #323232;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 24px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.enter a:hover {
+	border-bottom: none;
+}
+
 .empty-cart {
 	width: 59px;
 	height: 16px;
@@ -194,6 +207,26 @@ h1, h2 {
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 24px;
+}
+
+.cart {
+	color: #323232;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 16px;
+	width: 539px;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	background-color: #f8f7f4;
+}
+
+.cart td span {
+	color: #999;
+}
+
+.total-price {
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 18px;
 }
 
 .info {
@@ -274,6 +307,54 @@ h1 {
 	border-radius: 5px;
 }
 
+.ice-cream-cowberry:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+}
+
+.ice-cream-blueberry:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+}
+
+.ice-cream-caramel-pieces:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+}
+
+.ice-cream-chocolate-flakes:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+}
+
+.ice-cream-chocolate-pieces:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+}
+
+.ice-cream-menthol:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+}
+
+.ice-cream-black-chocolate:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+}
+
+.ice-cream-mint:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+}
+
 .ice-cream-container img {
 	border-radius: 100px;
 }
@@ -293,6 +374,7 @@ h1 {
 
 .ice-cream-price span {
 	font-size: 30px;
+	line-height: 45px;
 }
 
 .description {
@@ -445,8 +527,8 @@ h1 {
 
 
 
-.inner-page {
-	background-image: none;
+/*.inner-page {
+	
 }
 
 .main-menu {
@@ -460,3 +542,20 @@ h1 {
 	line-height: 16px;
 }
 
+.ice-cream-orange {
+	width: 200px;
+	display: inline-block;
+}
+
+.ice-cream-chocolate {
+	width: 200px;
+	display: inline-block;
+	}*/
+
+	.ice-cream-container {
+		width: 900px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+	}

@@ -8,6 +8,7 @@ body {
 	font-weight: 700;
 
 	background-color: #849D8F;
+	/*Пофиксить*/
 	background-image: url("../img/two-ice-cream.png");
 	background-repeat: no-repeat;
 	background-position: top center;
@@ -138,21 +139,26 @@ h1, h2 {
 	background-image: url("../img/search-hover.png");
 }
 
-.search-form {
+.search-form input {
 	display: none;
 }
 
-.search:active ~ .search-form {
+.search:checked ~ .search-form {
 	display: inline-block;
 }
 
 .btn-login {
-padding: 12px 24px;
+	color: #fefefe;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	padding: 12px 24px;
 }
 
 .login {
-	width: 33px;
-	height: 15px;
+	position: relative;
+	width: 46px;
+	height: 19px;
 	color: #fff;
 	font-weight: 500;
 	font-size: 14px;
@@ -161,24 +167,14 @@ padding: 12px 24px;
 	border-radius: 20px;
 }
 
-.login::after {
+.login::before {
 	content: "";
-	display: block;
-	position: relative;
-	top: -17px;
-	left: -20px;
-	width: 17px;
-	height: 17px;
+	position: absolute;
+	width: 21px;
+	height: 19px;
+	left: -25px;
 	background-image: url("../img/login.png");
 	background-repeat: no-repeat;
-}
-
-.login:hover {
-	color: #000;
-	background-color: #f8f7f4;
-	background-image: url("../img/login-hover.png");
-	background-repeat: no-repeat;
-	background-position: left;
 }
 
 .empty-cart {
@@ -190,6 +186,14 @@ padding: 12px 24px;
 	background-color: rgba(255, 255, 255, 0.2);
 	padding: 10px 30px;
 	border-radius: 20px;
+}
+
+.btn-cart {
+	padding: 10px 20px;
+	color: #fefefe;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
 }
 
 .info {
@@ -244,6 +248,30 @@ h1 {
 	background-image: url("../img/chocolate.jpg");
 	background-repeat: no-repeat;
 	border-radius: 15px;
+}
+
+.ice-cream-orange:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+}
+
+.ice-cream-chocolate:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+}
+
+.ice-cream-white-chocolate:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+}
+
+.ice-cream-caramel:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
 }
 
 .ice-cream-container img {
@@ -381,7 +409,19 @@ h1 {
 }
 
 .provider {
+	position: relative;
 	font-weight: 700;
+}
+
+.provider::before {
+	content: "";
+	width: 15px;
+	height: 13px;
+	position: absolute;
+	left: -20px;
+	top: 3px;
+	background-image: url("../img/heart.svg");
+	background-repeat: no-repeat;
 }
 
 .btn-developer p {
@@ -398,3 +438,25 @@ h1 {
 .academy:hover {
 	border-bottom: none;
 }
+
+
+
+
+
+
+
+.inner-page {
+	background-image: none;
+}
+
+.main-menu {
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.main-menu span {
+	font-size: 14px;
+	line-height: 16px;
+}
+

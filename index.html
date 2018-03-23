@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="main-header">
-    <img class="logo" src="img/logo.png" width="154" height="64" alt="Магазин мороженого &#171;Gllacy&#187;">
+    <a href="#"><img class="logo" src="img/logo.png" width="154" height="64" alt="Магазин мороженого &#171;Gllacy&#187;"></a>
     <nav class="navigation">
       <ul class="navigation-menu">
        <li class="catalog"><a href="#">Каталог</a>
@@ -80,10 +80,13 @@
     8 812 450-25-25
   </p>
 </div>
+
 <div class="container-3">
   <h1>Крем-брюле и пломбир с малиновым джемом</h1>
+  <a class="btn btn-buy" href="#">Давайте оба!</a>
 </div>
-<div class="container-4">
+
+<div class="slider">
   <div class="slide-1">
     <input type="radio" id="n1" name="slide"><label class="visually-hidden" for="n1">Первый слайд</label>
   </div>
@@ -93,11 +96,10 @@
   <div class="slide-3">
     <input type="radio" id="n3" name="slide"><label class="visually-hidden" for="n3">Третий слайд</label>
   </div>
-  <a class="btn btn-buy" href="#">Давайте оба!</a>
 </div>
 </header>
 
-<main class="main-menu">
+<main class="main">
   <section class="bonus bonus-berry">
     <h2>Малинка даром!</h2>
     <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -111,38 +113,37 @@
 
   <div class="ice-cream-container">
     <h3 class="visually-hidden">Популярные товары</h3>
-    <div class="ice-cream hit">
+    <article class="ice-cream hit">
      <img class="ice-cream-img" src="img/ice-cream-1.jpg" width="200" height="200" alt="Мороженое с апельсиновым джемом">
      <p class="ice-cream-price">310&#8381;<span>/кг</span></p>
-     <a href="#"><p class="ice-cream-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</p></a>
-   </div>
+     <a href="#"><h4 class="ice-cream-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h4></a>
+   </article>
 
-   <div class="ice-cream hit">
+   <article class="ice-cream hit">
      <img class="ice-cream-img" src="img/ice-cream-2.jpg" width="200" height="200" alt="Мороженое с кусочками шоколада">
      <p class="ice-cream-price">380&#8381;<span>/кг</span></p>
-     <a href="#"><p class="ice-cream-title">Сливочно-кофейное с кусочками шоколада</p></a>
-   </div>
+     <a href="#"><h4 class="ice-cream-title">Сливочно-кофейное с кусочками шоколада</h4></a>
+   </article>
 
-   <div class="ice-cream hit">
+   <article class="ice-cream hit">
      <img class="ice-cream-img" src="img/ice-cream-3.jpg" width="200" height="200" alt="Мороженое с присыпкой из белого шоколада">
      <p class="ice-cream-price">355&#8381;<span>/кг</span></p>
-     <a href="#"><p class="ice-cream-title">Сливочно-клубничное с присыпкой из белого шоколада</p></a>
-   </div>
+     <a href="#"><h4 class="ice-cream-title">Сливочно-клубничное с присыпкой из белого шоколада</h4></a>
+   </article>
 
-   <div class="ice-cream hit">
+   <article class="ice-cream hit">
      <img class="ice-cream-img" src="img/ice-cream-4.jpg" width="200" height="200" alt="Мороженое с карамельной подливкой">
      <p class="ice-cream-price">415&#8381;<span>/кг</span></p>
-     <a href="#"><p class="ice-cream-title">Сливочное крем-брюле с карамельной подливкой</p></a>
-   </div>
+     <a href="#"><h4 class="ice-cream-title">Сливочное крем-брюле с карамельной подливкой</h4></a>
+   </article>
  </div>
 
  <section class="description">
-  <h4 class="visually-hidden">Преймущества</h4>
-  <b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
-  <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-  <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-  <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-  <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+  <h4>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h4>
+  <p class="descr-production">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+  <p class="descr-purchase">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+  <p class="descr-quality">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+  <p class="descr-delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
 </section>
 
 <article class="blog">
@@ -154,22 +155,24 @@
   <h5 class="visually-hidden">Новостная рассылка</h5>
   <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
   <form action="#">
-   <label for="email-news"></label>
+   <label class="visually-hidden" for="email-news">Электронная почта</label>
    <input type="text" id="email-news" placeholder="Электронная почта">
    <button class="btn btn-email" type="submit">Отправить</button>
  </form>
 </article>
 </main>
 
-<div class="map">
+<div class="map contacts">
   <h6 class="visually-hidden">Как до нас добраться</h6>
   <img src="img/map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="900" height="744">
   <div class="address">
-   <p>Адрес главного офиса и офлайн-магазина:
-    <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
-    <p>Для заказов по телефону:<b>8 812 450-25-25</b>(с 10 до 20 ежедневно)</p>
-    <a class="btn btn-feedback" href="#">Форма обратной связи</a>
-  </div>
+   <p>Адрес главного офиса и офлайн-магазина:</p>
+   <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+   <p>Для заказов по телефону:</p>
+   <b>8 812 450-25-25</b>
+   <p>(с 10 до 20 ежедневно)</p>
+   <a class="btn btn-feedback" href="#">Форма обратной связи</a>
+ </div>
 </div>
 
 <div class="feedback">
@@ -193,12 +196,12 @@
    <li><a class="social-btn vk-btn" href="#">ВКонтакте</a></li>
  </ul>
 
- <ul class="additional-info">
-   <li><a class="provider" href="#">Для поставщиков</a></li>
-   <li><a href="#">О производстве</a></li>
-   <li><a href="#">Наши документы</a></li>
-   <li><a href="#">Экологические стандарты</a></li>
- </ul>
+   <ul class="additional-info">
+     <li><a class="provider" href="#">Для поставщиков</a></li>
+     <li><a href="#">О производстве</a></li>
+     <li><a href="#">Наши документы</a></li>
+     <li><a href="#">Экологические стандарты</a></li>
+   </ul>
 
  <ul class="btn-developer">
    <li><a href="#"><img src="img/logo-dev.png" alt="Логотип разработчика сайта" width="108" height="39"></a></li>

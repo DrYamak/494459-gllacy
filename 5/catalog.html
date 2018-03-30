@@ -30,49 +30,49 @@
 
   <div class="container-1">
    <a class="search" href="#">Поиск</a>
-    <div class="search-container">
-      <form class="search-form" action="#">
-        <label class="visually-hidden" for="search-input">Что ищем?</label>
-        <input type="text" name="search" id="search-input" placeholder="Что ищем?">
-        <button class="visually-hidden" type="submit">Найти</button>
-      </form>
-    </div>
+   <div class="search-container">
+    <form class="search-form" action="#">
+      <label class="visually-hidden" for="search-input">Что ищем?</label>
+      <input type="text" name="search" id="search-input" placeholder="Что ищем?">
+      <button class="visually-hidden" type="submit">Найти</button>
+    </form>
+  </div>
 
-    <a class="login" href="#">Вход</a>
-    <div class="login-container">
-      <form action="#">
-       <label class="visually-hidden" for="login-email">Электронная почта</label>
-       <input type="text" id="login-email" placeholder="Электронная почта">
-       <label class="visually-hidden" for="pswd">Пароль</label>
-       <input type="password" id="pswd" placeholder="Пароль">
-       <button class="btn btn-login" type="submit">Войти</button>
-     </form>
-     <a href="#">Забыли пароль?</a>
-     <a href="#">Новая регистрация</a>
-   </div>
-
-   <a class="cart" href="#">Пусто</a>
-   <div class="cart-container">
+  <a class="login" href="#">Вход</a>
+  <div class="login-container">
     <form action="#">
-     <table>
-      <tr>
-       <td><a class="delete" href="#">&times;</a></td>
-       <td><a href="#"><img src="img/ice-cream-1.jpg" alt="Мороженое с апельсиновым джемом" width="33" height="33"></a></td>
-       <td>Пломбир с апельсиновым джемом</td>
-       <td>1,5 кг х <span>267 руб.</span></td>
-       <td>300 руб.</td>
-     </tr>
-     <tr>
-       <td><a class="delete" href="#">&times;</a></td>
-       <td><a href="#"><img src="img/ice-cream-3.jpg" alt="Мороженое с присыпкой из белого шоколада" width="33" height="33"></a></td>
-       <td>Клубничный пломбир с приice-cream-сыпкой из белого шоколада</td>
-       <td>1,5 кг х <span>300 руб.</span></td>
-       <td>450 руб.</td>
-     </tr>
-   </table>
-   <span class="total-price">Итого: 750 руб.</span>
-   <button class="btn btn-cart" type="submit">Оформить заказ</button>
- </form>
+     <label class="visually-hidden" for="login-email">Электронная почта</label>
+     <input type="text" id="login-email" placeholder="Электронная почта">
+     <label class="visually-hidden" for="pswd">Пароль</label>
+     <input type="password" id="pswd" placeholder="Пароль">
+     <button class="btn btn-login" type="submit">Войти</button>
+   </form>
+   <a href="#">Забыли пароль?</a>
+   <a href="#">Новая регистрация</a>
+ </div>
+
+ <a class="cart" href="#">Пусто</a>
+ <div class="cart-container">
+  <form action="#">
+   <table>
+    <tr>
+     <td><a class="delete" href="#">&times;</a></td>
+     <td><a href="#"><img src="img/ice-cream-1.jpg" alt="Мороженое с апельсиновым джемом" width="33" height="33"></a></td>
+     <td>Пломбир с апельсиновым джемом</td>
+     <td>1,5 кг х <span>267 руб.</span></td>
+     <td>300 руб.</td>
+   </tr>
+   <tr>
+     <td><a class="delete" href="#">&times;</a></td>
+     <td><a href="#"><img src="img/ice-cream-3.jpg" alt="Мороженое с присыпкой из белого шоколада" width="33" height="33"></a></td>
+     <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+     <td>1,5 кг х <span>300 руб.</span></td>
+     <td>450 руб.</td>
+   </tr>
+ </table>
+ <span class="total-price">Итого: 750 руб.</span>
+ <button class="btn btn-cart" type="submit">Оформить заказ</button>
+</form>
 </div>
 </div>
 
@@ -85,41 +85,42 @@
 </header>
 
 <main class="main">
- <h1 class="catalog-heading">Сливочное мороженое</h1>
- <form action="#">
-  <fieldset class="sorting">
-   <legend>Сортировка:</legend>
-   <select>
-    <option>по популярности</option>
-    <option>сначала недорогие</option>
-    <option>сначала дорогие</option>
-    <option>по жирности</option>
-  </select>
-</fieldset>
+  <p class="bread-crumbs">Главная  »  Каталог  »  Сливочное</p>
+  <h1 class="catalog-heading">Сливочное мороженое</h1>
+  <form action="#">
+    <fieldset class="sorting">
+     <legend>Сортировка:</legend>
+     <select>
+      <option class="asd">по популярности</option>
+      <option>сначала недорогие</option>
+      <option>сначала дорогие</option>
+      <option>по жирности</option>
+    </select>
+  </fieldset>
 
-<fieldset class="price">
- <legend>Цена: 100 руб. – 500 руб.</legend>
- <div class="range">
-</div>
-</fieldset>
+  <fieldset class="price">
+   <legend>Цена: 100 руб. – 500 руб.</legend>
+   <div class="range">
+   </div>
+ </fieldset>
 
-<fieldset class="fat">
- <legend>Жирность:</legend>
- <input id="o1" type="radio" name="quantity"><label for="o1">0%</label>
- <input id="o2" type="radio" name="quantity"><label for="o2">до 10%</label>
- <input id="o3" type="radio" name="quantity"><label for="o3">до 30%</label>
- <input id="o4" type="radio" name="quantity"><label for="o4">выше 30%</label>
-</fieldset>
+ <fieldset class="fat">
+   <legend>Жирность:</legend>
+   <input class="visually-hidden" id="o1" type="radio" name="quantity"><label tabindex="0" for="o1">0%</label>
+   <input class="visually-hidden" id="o2" type="radio" name="quantity"><label tabindex="0" for="o2">до 10%</label>
+   <input class="visually-hidden" id="o3" type="radio" name="quantity"><label tabindex="0" for="o3">до 30%</label>
+   <input class="visually-hidden" id="o4" type="radio" name="quantity"><label tabindex="0" for="o4">выше 30%</label>
+ </fieldset>
 
-<fieldset class="fillers">
- <legend>Наполнители:</legend>
- <input id="o5" type="checkbox" checked><label for="o5">шоколадные</label>
- <input id="o6" type="checkbox" checked><label for="o6">сахарные присыпки</label>
- <input id="o7" type="checkbox"><label for="o7">фрукты</label>
- <input id="o8" type="checkbox"><label for="o8">сиропы</label>
- <input id="o9" type="checkbox"><label for="o9">джемы</label>
-</fieldset>
-<button class="btn-apply" type="submit">Применить</button>
+ <fieldset class="fillers">
+   <legend>Наполнители:</legend>
+   <input class="visually-hidden" id="o5" type="checkbox" tabindex="0" checked><label for="o5">шоколадные</label>
+   <input class="visually-hidden" id="o6" type="checkbox" tabindex="0" checked><label for="o6">сахарные присыпки</label>
+   <input class="visually-hidden" id="o7" type="checkbox" tabindex="0"><label for="o7">фрукты</label>
+   <input class="visually-hidden" id="o8" type="checkbox" tabindex="0"><label for="o8">сиропы</label>
+   <input class="visually-hidden" id="o9" type="checkbox" tabindex="0"><label for="o9">джемы</label>
+ </fieldset>
+ <button class="btn-apply" type="submit">Применить</button>
 </form>
 
 

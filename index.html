@@ -26,7 +26,7 @@
     </ul>
   </nav>
 
-  <div class="container-1">
+  <div class="user-menu">
    <a class="search" href="#">Поиск</a>
    <div class="search-container">
     <form class="search-form" action="#">
@@ -51,37 +51,37 @@
 
  <a class="cart" href="#">Пусто</a>
  <div class="cart-container">
-  <form action="#">
    <table>
     <tr>
      <td><a class="delete" href="#">&times;</a></td>
-     <td><a href="#"><img src="img/ice-cream-1.jpg" alt="Мороженое с апельсиновым джемом" width="33" height="33"></a></td>
+     <td><img src="img/ice-cream-1.jpg" alt="Мороженое с апельсиновым джемом" width="33" height="33"></td>
      <td>Пломбир с апельсиновым джемом</td>
-     <td>1,5 кг х <span>200 руб.</span></td>
-     <td>300 руб.</td>
+     <td class="ice-cream-cart">1,5 кг х <span>200 руб.</span></td>
+     <td class="price-ice-cream">300 руб.</td>
    </tr>
    <tr>
      <td><a class="delete" href="#">&times;</a></td>
-     <td><a href="#"><img src="img/ice-cream-3.jpg" alt="Мороженое с присыпкой из белого шоколада" width="33" height="33"></a></td>
+     <td><img src="img/ice-cream-3.jpg" alt="Мороженое с присыпкой из белого шоколада" width="33" height="33"></td>
      <td>Клубничный пломбир с присыпкой из&nbsp;белого&nbsp;шоколада</td>
      <td>1,5 кг х <span>300 руб.</span></td>
      <td>450 руб.</td>
    </tr>
  </table>
- <span class="total-price">Итого: 750 руб.</span>
- <button class="btn btn-cart" type="submit">Оформить заказ</button>
-</form>
+ <div class="total-price">Итого: 750 руб.</div>
+ <div class="btn-cart-container">
+   <a class="btn btn-cart">Оформить заказ</a>
+ </div>
 </div>
 </div>
 
-<div class="container-2">
+<div class="main-info">
   <p class="info">
     <span>С 10 до 20, ежедневно</span>
     8 812 450-25-25
   </p>
 </div>
 
-<div class="container-3">
+<div class="main-title">
   <h1>Крем-брюле и пломбир с&nbsp;малиновым&nbsp;джемом</h1>
   <a class="btn btn-buy" href="#">Давайте оба!</a>
 </div>
@@ -124,18 +124,21 @@
      <img src="img/ice-cream-2.jpg" width="267" height="267" alt="Мороженое с кусочками шоколада">
      <p class="ice-cream-price">380&#8381;<span>/кг</span></p>
      <h4 class="ice-cream-title">Сливочно-кофейное с кусочками шоколада</h4>
+     <a class="btn btn-review" href="#">Быстрый просмотр</a>
    </article>
 
    <article class="ice-cream hit">
      <img src="img/ice-cream-3.jpg" width="267" height="267" alt="Мороженое с присыпкой из белого шоколада">
      <p class="ice-cream-price">355&#8381;<span>/кг</span></p>
      <h4 class="ice-cream-title">Сливочно-клубничное с присыпкой&nbsp;из белого шоколада</h4>
+     <a class="btn btn-review" href="#">Быстрый просмотр</a>
    </article>
 
    <article class="ice-cream hit">
      <img src="img/ice-cream-4.jpg" width="267" height="267" alt="Мороженое с карамельной подливкой">
      <p class="ice-cream-price">415&#8381;<span>/кг</span></p>
      <h4 class="ice-cream-title">Сливочное крем-брюле с карамельной подливкой</h4>
+     <a class="btn btn-review" href="#">Быстрый просмотр</a>
    </article>
  </div>
 
@@ -166,7 +169,7 @@
 <div class="map">
   <h6 class="visually-hidden">Как до нас добраться</h6>
   <div class="address">
-   <p>Адрес главного офиса и офлайн-магазина:</p>
+   <p>Адрес главного офиса и&nbsp;офлайн-магазина:</p>
    <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
    <p>Для заказов по телефону:</p>
    <b>8 812 450-25-25</b>
@@ -183,7 +186,7 @@
   <input type="text" id="name" placeholder="Как вас зовут?">
   <label class="visually-hidden" for="email">Ваша почта для ответа?</label>
   <input type="text" id="email" placeholder="Ваша почта для ответа?">
-  <textarea name="text" cols="48" rows="8" placeholder="Напишите что-нибудь..."></textarea>
+  <textarea name="text" placeholder="Напишите что-нибудь..."></textarea>
   <button class="btn btn-feedback" type="submit">Отправить</button>
 </form>
 </div>
@@ -204,8 +207,8 @@
  </ul>
 
  <ul class="btn-developer">
-   <li><a href="#"><img src="img/logo-dev.png" alt="Логотип разработчика сайта" width="108" height="39"></a></li>
-   <li><p>Сделано в <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p></li>
+   <li><a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-dev.png" alt="Логотип разработчика сайта" width="108" height="39"></a></li>
+   <li><p>Сделано в <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2017</p></li>
  </ul>
 </footer>
 </body>

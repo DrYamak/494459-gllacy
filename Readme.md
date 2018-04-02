@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Aleksandr Daniel](https://up.htmlacademy.ru/htmlcss/20/user/494459).
-* Наставник: `Антон Попов`.
+* Студент: [DrYamak](https://up.htmlacademy.ru/htmlcss/20/user/494459).
+* Наставник: `keks`.
 
 ---
 
